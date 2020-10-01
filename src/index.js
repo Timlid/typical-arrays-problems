@@ -1,7 +1,11 @@
 // ! TYPICAL ARRAY PROBLEMS
 
 exports.min = function min(array) {
-    return 0;
+    if (array === "" || array === undefined) {
+        return 0;
+    } else {
+        return Math.min(...array);
+    }
 };
 
 exports.max = function max(array) {
